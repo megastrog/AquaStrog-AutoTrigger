@@ -1601,15 +1601,14 @@ void reprint()
         rainbow_line_printf("R = Toggle Accuracy.\n");
         rainbow_line_printf("G = Get activation for reticule area.\n");
         rainbow_line_printf("H = Hold pressed to print scans per second.\n");
-        rainbow_line_printf("\nDisable the game crosshair by enabling alpha and setting alpha to 0.\n");
+        rainbow_line_printf("\nDisable the game crosshair.\n");
         rainbow_line_printf("> If your monitor provides a crosshair that will work fine.\n");
-        rainbow_line_printf("> OR make the crosshair a single green pixel.\n");
         rainbow_line_printf("> OR just use the crosshair this bot provides.\n");
         printf("\e[38;5;76m");
         printf("\nYou must force all player models to the AquaBlue Bones player model.\n");
         printf("\e[38;5;123m");
         printf("\033[1;36m");
-        printf(" /cg_railTrailTime 0\n /cg_oldrail 1\n /cg_forceModel 1\n /model bones/default\n\n\n");
+        printf(" /cg_railTrailTime 0\n /cg_oldrail 1\n /cg_forceModel 1\n /model bones/default\n\n");
         printf("\e[38;5;123m");
 
         if(twin != 0)
