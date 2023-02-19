@@ -1839,7 +1839,7 @@ int main(int argc, char *argv[])
                     }
                 }
 
-                // crosshair toggle
+                // accuracy toggle
                 if(key_is_pressed(XK_R))
                 {
                     if(acc == 0)
