@@ -1625,7 +1625,7 @@ void reprint()
             else
                 rainbow_line_printf("ACCURACY: \033[1m\e[31mOFF\e[0m\n");
 
-            if(crosshair == 1)
+            if(crosshair > 0)
                 rainbow_line_printf("CROSSHAIR: \033[1m\e[32mON\e[0m\n");
             else
                 rainbow_line_printf("CROSSHAIR: \033[1m\e[31mOFF\e[0m\n");
@@ -1652,7 +1652,7 @@ void reprint()
             else
                 printf("\e[38;5;%umACCURACY: \033[1m\e[31mOFF\e[0m | ", minimal);
 
-            if(crosshair == 1)
+            if(crosshair > 0)
                 printf("\e[38;5;%umCROSSHAIR: \033[1m\e[32mON\e[0m | ", minimal);
             else
                 printf("\e[38;5;%umCROSSHAIR: \033[1m\e[31mOFF\e[0m | ", minimal);
