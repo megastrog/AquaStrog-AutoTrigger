@@ -1699,12 +1699,20 @@ int main(int argc, char *argv[])
 
     //
 
-    // open display 0
-    d = XOpenDisplay(":0");
+    // try to open the default display
+    d = XOpenDisplay(getenv("DISPLAY")); // explicit attempt on environment variable
     if(d == NULL)
     {
-        printf("Failed to open display\n");
-        return 0;
+        d = XOpenDisplay((char*)NULL); // implicit attempt on environment variable
+        if(d == NULL)
+        {
+            d = XOpenDisplay(":0"); // hedge a guess
+            if(d == NULL)
+            {
+                printf("Failed to open display :'(\n");
+                return 0;
+            }
+        }
     }
 
     // get default screen
