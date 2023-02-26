@@ -62,7 +62,6 @@ uint tc = 0;
 uint acc = 0;
 uint minimal = 0;
 uint enable = 0;
-uint offset = 3;
 uint crosshair = 1;
 uint hotkeys = 1;
 
