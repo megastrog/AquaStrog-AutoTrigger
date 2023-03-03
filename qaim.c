@@ -43,7 +43,7 @@
 #define ACTIVATION_SENITIVITY 0.97f
 #define REPEAT_ACTIVATION 0
 
-#define uint uint
+#define uint unsigned int
 const uint sd = 28;
 const uint sd2 = sd/2;
 const uint slall = (sd*sd)*3;
